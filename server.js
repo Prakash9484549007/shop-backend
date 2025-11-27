@@ -9,7 +9,7 @@ app.use(cors());
 
 // CONNECT TO LOCAL MONGODB
 // Use the Cloud URL if available, otherwise use Local
-const mongoURI = process.env.MONGO_URI || "mongodb://127.0.0.1:27017/shopDB";
+const mongoURI = process.env.MONGO_URI || "mongodb+srv://lalchandanip595_db_user:exEwIO9gNb2EhgLm@conversiontrackingclust.ywngtsn.mongodb.net/shopDB?appName=conversiontrackingcluster";
 mongoose.connect(mongoURI)
     .then(() => console.log("MongoDB Connected"))
     .catch(err => console.log(err));
